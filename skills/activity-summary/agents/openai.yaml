@@ -1,0 +1,4 @@
+interface:
+  display_name: "ActivitySummary"
+  short_description: "粤港澳硬核技术活动检索、筛选与统一情报输出"
+  default_prompt: "使用 $activity-summary 检索两周内深圳、广州、珠海、香港、澳门的线下真实硬核技术活动，优先保留真实可去活动，按固定模板输出主清单、快速卡片和深圳候补链接。"
