@@ -38,21 +38,21 @@
 
 skill 主文件位置：
 
-- `skills/activity-summary/SKILL.md`
+- `SKILL.md`
 
 ## 这个仓库怎么分
 
 - `prompts/activity-summary-prompt.md`
   - 直接给自动化或手动检索用的完整版提示词
-- `skills/activity-summary/SKILL.md`
+- `SKILL.md`
   - skill 主文件，写的是触发条件、检索流程、筛选规则、输出规则
-- `skills/activity-summary/agents/openai.yaml`
+- `agents/openai.yaml`
   - skill 的展示元数据
-- `skills/activity-summary/references/output-template.md`
+- `references/output-template.md`
   - 固定输出模板
-- `skills/activity-summary/references/source-checklist.md`
+- `references/source-checklist.md`
   - 信息源优先级和搜索顺序
-- `skills/activity-summary/references/filtering-rubric.md`
+- `references/filtering-rubric.md`
   - 主清单、候补区、直接剔除的判断规则
 
 ## 现在这版的运行方式
