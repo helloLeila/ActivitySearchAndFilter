@@ -5,6 +5,17 @@ description: Use when finding and summarizing real offline technical events in G
 
 # Activity Summary
 
+## Config Block
+
+每次使用这个 skill 时，先看并只改下面这个配置块：
+
+- 地区范围：深圳、广州、珠海、香港、澳门
+- 时间范围：本周一 00:00 至下周日 23:59
+- 固定起点：深大地铁站 A3/A4 出口
+- 重点活动平台：Luma、Meetup
+
+如果之后想换地区，默认只需要改“地区范围”这一行，然后让后文所有检索、统计、城市分布、跨城交通判断都跟着这一行走，不要逐段手改城市名称。
+
 ## Overview
 
 这个 skill 用来稳定完成“真实线下技术活动检索与情报整理”。
@@ -60,19 +71,15 @@ description: Use when finding and summarizing real offline technical events in G
 
 默认地域范围：
 
-- 深圳
-- 广州
-- 珠海
-- 香港
-- 澳门
+- 以 Config Block 里的“地区范围”一行为准
 
 默认时间范围：
 
-- 从本周一 00:00 到下周日 23:59
+- 以 Config Block 里的“时间范围”一行为准
 
 默认固定出发点：
 
-- 深大地铁站 A3/A4 出口
+- 以 Config Block 里的“固定起点”一行为准
 
 ## Hard Rules
 
@@ -130,12 +137,13 @@ description: Use when finding and summarizing real offline technical events in G
 按这个顺序工作：
 
 1. 先确定时间窗和城市范围
-2. 从高校、学术组织、Luma/Meetup、官方技术社区开始抓第一批候选
-3. 对每个候选核验：时间、地点、主题、公开性
-4. 再判断是否足够硬核
-5. 通过者进入主清单
-6. 接近但未过线者进入候补池
-7. 最后再补交通、报名、旁听、费用等辅助字段
+2. 先看 Config Block，确认“地区范围”“时间范围”“重点活动平台”
+3. 先从 Luma、Meetup、高校、学术组织、官方技术社区开始抓第一批候选
+4. 对每个候选核验：时间、地点、主题、公开性
+5. 再判断是否足够硬核
+6. 通过者进入主清单
+7. 接近但未过线者进入候补池
+8. 最后再补交通、报名、旁听、费用等辅助字段
 
 重点：**不要倒过来做**。  
 不要先为了补交通、公众号、出口、票价而把真正的活动漏掉。
@@ -159,6 +167,8 @@ description: Use when finding and summarizing real offline technical events in G
 使用时优先读：
 
 - [references/source-checklist.md](references/source-checklist.md)
+
+其中，Luma 和 Meetup 默认属于第一批必查平台，不要降级成“有空再补”的来源。
 
 ## Candidate Handling
 
